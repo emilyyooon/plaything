@@ -1,0 +1,188 @@
+@font-face {
+    font-family: "Rockwell";
+    src: url("rockwell.woff") format('woff');
+}
+body {
+    overflow-x: hidden;
+}
+
+.item-container {
+    width: 35rem;
+    height: 50rem;
+    display: block;
+    padding: 1rem;
+    border: 2px solid black;
+    margin: 5rem;
+    overflow: hidden;
+}
+h2 {
+    font-family: rockwell;
+    font-size: 5.7rem;
+    margin: 0;
+    padding: 0;
+}
+h3 {
+    font-family: futura-pt-condensed,sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 4rem;
+    margin-bottom: 0;
+}
+p {
+    font-family: futura-pt-condensed,sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 2rem;
+    margin-top: 7rem;
+
+}
+.song-image {
+    max-width:100%;
+    max-height:100%;
+    object-fit: contain;
+    align-self: center;
+}
+
+
+.container {
+    display: flex;
+    background-color: white;
+    margin-top: 10rem;
+    padding: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.cover {
+    background-color: lightgreen;
+}
+
+
+
+
+.h1 {
+    margin-left: auto;
+}
+.logo {
+    width: 4rem;
+    height: 6rem;
+    padding: .5rem;
+    align-self: flex-end;
+    margin-right: 4rem;
+}
+.header {
+    display: flex;
+    font-family: Rockwell;
+    font-size: 1.5rem;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    top: 0;
+    justify-content: space-between;
+    padding-top: 2rem;
+}
+
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: black;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    
+}
+.sidebar a {
+    text-decoration: none;
+    font-family: montserrat,sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    color: white;
+    font-size: 10rem;
+    display: flex;
+    transition: 0.3s;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.sidebar a:hover {
+    opacity: 70%;
+    font-family: montserrat,sans-serif;
+    font-weight: 800;
+    font-style: italic;
+    font-size: 5rem;
+}
+.sidebar .closebtn {
+    position: absolute;
+    top: 2rem;
+    left: 4rem;
+    font-size: 5rem;
+    margin-right: 50px;
+}
+.openbtn {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    align-self: end;
+}
+.openbtn:hover {
+    opacity: 65%;
+}
+#main {
+    transition: margin-right .5s;
+    padding: 16px;
+}
+
+.furn {
+    text-decoration: none;
+    font-family: montserrat,sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    color: white;
+    font-size: 10rem;
+    margin-left: 10rem;
+    
+}
+.furn:hover {
+    opacity: 70%;
+    font-family: montserrat,sans-serif;
+    font-weight: 800;
+    font-style: italic;
+    font-size: 10rem;
+}
+.kit {
+    text-decoration: none;
+    font-family: montserrat,sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    color: white;
+    font-size: 10rem;
+    margin-left: 10rem;
+
+}
+.kit:hover {
+    opacity: 70%;
+    font-family: montserrat,sans-serif;
+    font-weight: 800;
+    font-style: italic;
+    font-size: 10rem;
+}
+.misc {
+    text-decoration: none;
+    font-family: montserrat,sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    color: white;
+    font-size: 10rem;
+    margin-left: 10rem;
+}
+.misc:hover {
+    opacity: 70%;
+    font-family: montserrat,sans-serif;
+    font-weight: 800;
+    font-style: italic;
+    font-size: 10rem;
+}

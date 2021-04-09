@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.typekit.net/rec7kav.css">
+    <link rel="stylesheet" href="https://use.typekit.net/rec7kav.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="airtable.browser.js" defer></script>
+    <script src="script.js" defer></script>
+    
+    <title>Plaything</title>
+</head>
+<body>
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
+        <span class="furn">Furniture</span>
+        <span class="kit">Kitchen</span>
+        <span class="misc">Misc</span>
+    </div>
+
+    <div class="header">
+        <div id="bg"></div>
+        <h1>PLAYTHING</h1>
+        <div id="main" class="logo">
+            <button class="openbtn" onclick="openNav()"><img src="logo.png" alt="logo" style="width: 3rem; height: 5.5rem;"></button>
+        </div>
+    </div>
+    <div class="container">
+
+        <div class="cover"></div>
+    </div>
+
+<script>
+function openNav() {
+    document.getElementById("mySidebar").style.width = "56rem";
+    document.getElementById("main").style.marginRight = "56rem";
+  }
+
+  function closeNav() {
+    document.getElementById("mySidebar").style.width = "0";
+    document.getElementbyId("main").style.marginRight = "0";
+  }
+  </script>
+    
+</body>
+</html>
