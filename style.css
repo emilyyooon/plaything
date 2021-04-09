@@ -14,6 +14,7 @@ body {
     border: 2px solid black;
     margin: 5rem;
     overflow: hidden;
+    position: relative;
 }
 h2 {
     font-family: rockwell;
@@ -27,6 +28,7 @@ h3 {
     font-style: normal;
     font-size: 4rem;
     margin-bottom: 0;
+    position: absolute;
 }
 p {
     font-family: futura-pt-condensed,sans-serif;
