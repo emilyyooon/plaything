@@ -19,16 +19,27 @@ body {
 h2 {
     font-family: rockwell;
     font-size: 5.7rem;
-    margin: 0;
-    padding: 0;
+    text-align: center;
+    margin-top: 1.5rem;
+    position: absolute;
 }
 h3 {
     font-family: futura-pt-condensed,sans-serif;
     font-weight: 800;
     font-style: normal;
+<<<<<<< Updated upstream
     font-size: 4rem;
     margin-bottom: 0;
     position: absolute;
+=======
+    font-size: 3.5rem;
+    width: 25rem;
+    object-fit: contain;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 1rem;
+>>>>>>> Stashed changes
 }
 p {
     font-family: futura-pt-condensed,sans-serif;
@@ -36,13 +47,17 @@ p {
     font-style: normal;
     font-size: 2rem;
     margin-top: 7rem;
-
+    margin-left: 1rem;
+    position: absolute;
 }
-.song-image {
-    max-width:100%;
-    max-height:100%;
+.item-image {
     object-fit: contain;
-    align-self: center;
+    display: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    width: 105%;
+    height: 105%;
+    margin-top: -1rem;
 }
 
 
@@ -76,7 +91,7 @@ p {
     display: flex;
     font-family: Rockwell;
     font-size: 1.5rem;
-    position: fixed;
+    position: sticky;
     background-color: white;
     width: 100%;
     top: 0;

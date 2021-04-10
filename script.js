@@ -61,26 +61,30 @@ function showItems() {
     itemContainer.classList.add("item-container");
     document.querySelector(".container").append(itemContainer);
     
+    var itemTitle = document.createElement("h2");
+    itemTitle.classList.add("item-title");
+    itemTitle.innerText = item.fields.item_title;
+    itemContainer.append(itemTitle);
+
     var itemCategory = document.createElement("p");
     itemCategory.classList.add("item-category");
     itemCategory.innerText = item.fields.item_category;
     itemContainer.append(itemCategory);
-
-    var itemName = document.createElement("h3");
-    itemName.classList.add("item-name");
-    itemName.innerText = item.fields.item_name;
-    itemContainer.append(itemName);
 
     var itemImage = document.createElement("img");
     itemImage.classList.add("item-image");
     itemImage.src = item.fields.item_image[0].url;
     itemContainer.append(itemImage);
 
-    var itemTitle = document.createElement("h2");
-    itemTitle.classList.add("item-title");
-    itemTitle.innerText = item.fields.item_title;
-    itemContainer.append(itemTitle);
+    var itemName = document.createElement("h3");
+    itemName.classList.add("item-name");
+    itemName.innerText = item.fields.item_name;
+    itemContainer.append(itemName);
 
+    
+
+    
+  
 
     // get type from airtable
     // loop through array and add each type as a class to container
@@ -112,10 +116,6 @@ function showItems() {
     if (itemContainer.classList.contains("MISC")) {
       itemContainer.style.background = "#FFC9FF";
     }
-    // hides elements to start
-    //document.querySelectorAll('item-container').forEach((item-container, i) => {
-    //itemContainer.style.display="none";
-    //})
 
   });
 }
