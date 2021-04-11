@@ -80,12 +80,7 @@ function showItems() {
     itemName.classList.add("item-name");
     itemName.innerText = item.fields.item_name;
     itemContainer.append(itemName);
-
     
-
-    
-  
-
     // get type from airtable
     // loop through array and add each type as a class to container
     var itemCategory = item.fields.item_category;
