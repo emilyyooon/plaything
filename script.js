@@ -80,7 +80,7 @@ function showItems() {
     itemName.classList.add("item-name");
     itemName.innerText = item.fields.item_name;
     itemContainer.append(itemName);
-    
+
     // get type from airtable
     // loop through array and add each type as a class to container
     var itemCategory = item.fields.item_category;
@@ -91,6 +91,12 @@ function showItems() {
 
     // add event listener to filter
     // add active class to item
+    var filterHome = document.querySelector('.home');
+    filterHome.addEventListener("click", function() {
+      itemContainer.style.display = "none";
+      
+    })
+
     var filterFurniture = document.querySelector('.furn');
     filterFurniture.addEventListener("click", function() {
 
@@ -99,7 +105,24 @@ function showItems() {
       } else {
         itemContainer.style.display = "none";
       }
+    })
+    var filterKitchen = document.querySelector('.kit');
+    filterKitchen.addEventListener("click", function() {
 
+      if (itemContainer.classList.contains("KITCHEN")) {
+        itemContainer.style.display = "block";
+      } else {
+        itemContainer.style.display = "none";
+      }
+    })
+    var filterMisc = document.querySelector('.misc');
+    filterMisc.addEventListener("click", function() {
+
+      if (itemContainer.classList.contains("MISC")) {
+        itemContainer.style.display = "block";
+      } else {
+        itemContainer.style.display = "none";
+      }
     })
 
     if (itemContainer.classList.contains("FURNITURE")) {
@@ -111,7 +134,6 @@ function showItems() {
     if (itemContainer.classList.contains("MISC")) {
       itemContainer.style.background = "#FFC9FF";
     }
-
   });
 }
 
