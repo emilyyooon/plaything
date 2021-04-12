@@ -118,6 +118,7 @@ p {
     transition: 0.3s;
     flex-direction: column;
     justify-content: space-around;
+
 }
 .sidebar a:hover {
     opacity: 70%;
@@ -155,6 +156,8 @@ p {
     color: white;
     font-size: 10rem;
     margin-left: 10rem;
+    position: absolute;
+    margin-top: 10rem;
     
 }
 .furn:hover {
@@ -172,6 +175,8 @@ p {
     color: white;
     font-size: 10rem;
     margin-left: 10rem;
+    position: absolute;
+    margin-top: 30rem;
 
 }
 .kit:hover {
@@ -189,6 +194,8 @@ p {
     color: white;
     font-size: 10rem;
     margin-left: 10rem;
+    position: absolute;
+    margin-top: 50rem;
 }
 .misc:hover {
     opacity: 70%;
@@ -197,3 +204,4 @@ p {
     font-style: italic;
     font-size: 10rem;
 }
+
