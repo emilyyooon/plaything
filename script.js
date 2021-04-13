@@ -80,7 +80,7 @@ function showItems() {
     itemName.classList.add("item-name");
     itemName.innerText = item.fields.item_name;
     itemContainer.append(itemName);
-
+    
     // get type from airtable
     // loop through array and add each type as a class to container
     var itemCategory = item.fields.item_category;
@@ -94,7 +94,6 @@ function showItems() {
     var filterHome = document.querySelector('.home');
     filterHome.addEventListener("click", function() {
       itemContainer.style.display = "none";
-      
     })
 
     var filterFurniture = document.querySelector('.furn');
@@ -138,5 +137,60 @@ function showItems() {
 }
 
 
+var slideshows = document.querySelectorAll('[data-component="slideshow"]');
+slideshows.forEach(inShow);
 
+function inShow(slideshow) {
+  var slides = document.querySelectorAll(`#${slideshow.id} [role="list"] .slide`);
+  
+    var index = 0, time = 5000;
+    slides[index].classList.add('active');
+
+    setInterval(() => {
+      slides[index].classList.remove('active');
+      index++;
+
+        if (index === slides.length) index = 0;
+
+        slides[index].classList.add('active');
+    }, time);
+}
+
+var slideshows = document.querySelectorAll('[data-component="slideshow2"]');
+slideshows.forEach(inShow);
+
+function inShow(slideshow) {
+  var slides = document.querySelectorAll(`#${slideshow.id} [role="list"] .slide`);
+  
+    var index = 0, time = 5000;
+    slides[index].classList.add('active');
+
+    setInterval(() => {
+      slides[index].classList.remove('active');
+      index++;
+
+        if (index === slides.length) index = 0;
+
+        slides[index].classList.add('active');
+    }, time);
+}
+
+var slideshows = document.querySelectorAll('[data-component="slideshow3"]');
+slideshows.forEach(inShow);
+
+function inShow(slideshow) {
+  var slides = document.querySelectorAll(`#${slideshow.id} [role="list"] .slide`);
+  
+    var index = 0, time = 5000;
+    slides[index].classList.add('active');
+
+    setInterval(() => {
+      slides[index].classList.remove('active');
+      index++;
+
+        if (index === slides.length) index = 0;
+
+        slides[index].classList.add('active');
+    }, time);
+}
 
