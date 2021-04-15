@@ -91,6 +91,12 @@ function showItems() {
 
     // add event listener to filter
     // add active class to item
+    var filterAll = document.querySelector('.view');
+    filterAll.addEventListener("click", function() {
+      itemContainer.style.display = "block";
+      
+    })
+
     var filterHome = document.querySelector('.home');
     filterHome.addEventListener("click", function() {
       itemContainer.style.display = "none";
@@ -112,6 +118,7 @@ function showItems() {
         itemContainer.style.display = "block";
       } else {
         itemContainer.style.display = "none";
+
       }
     })
     var filterMisc = document.querySelector('.misc');
@@ -193,4 +200,5 @@ function inShow(slideshow) {
         slides[index].classList.add('active');
     }, time);
 }
+
 

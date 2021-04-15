@@ -4,8 +4,6 @@
 }
 body {
     overflow-x: hidden;
-    display: flex;
-    flex-flow: row wrap;
 }
 
 .item-container {
@@ -26,6 +24,7 @@ h2 {
     font-size: 5.7rem;
     text-align: center;
     margin-top: 1.5rem;
+    margin-left: .5rem;
     position: absolute;
 }
 h3 {
@@ -38,7 +37,7 @@ h3 {
     position: absolute;
     bottom: 0;
     right: 0;
-    left: 1rem;
+    left: 2rem;
 }
 p {
     font-family: futura-pt-condensed,sans-serif;
@@ -80,23 +79,14 @@ p {
     margin-top: -5rem;
     animation: fadein 2s forwards;
 }
-@keyframes fadein {
-    to {
-        background-color: black;
-    }
-}
+
 
 
 .h1 {
     margin-left: auto;
 
 }
-.logo {
-    width: 4rem;
-    height: 6rem;
-    padding: .5rem;
-    cursor: pointer;
-}
+
 .header {
     display: flex;
     font-family: Rockwell;
@@ -104,187 +94,111 @@ p {
     position: sticky;
     background-color: white;
     top: 0;
-    padding-top: 2rem;
     flex-flow: row wrap;
     width: 100%;
     justify-content: space-between;
+    margin-left: 2rem;
 }
 
 
-.sidebar {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    right: 0;
-    background-color: white;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-}
-.sidebar a {
-    text-decoration: none;
-    font-family: montserrat,sans-serif;
-    font-weight: 800;
-    font-style: normal;
-    color: black;
-    font-size: 10rem;
-    display: flex;
-    transition: 0.3s;
-    flex-direction: column;
-    justify-content: space-around;
-
-}
-.sidebar a:hover {
-    opacity: 70%;
-    font-family: montserrat,sans-serif;
-    font-weight: 800;
-    font-style: italic;
-    font-size: 5rem;
-}
-.sidebar .closebtn {
-    position: absolute;
-    top: 2rem;
-    left: 4rem;
-    font-size: 5rem;
-    margin-right: 50px;
-}
-.openbtn {
-    border: none;
-    background-color: transparent;
-    outline: none;
-    align-self: end;
-    cursor: pointer;
-}
-.openbtn:hover {
-    opacity: 65%;
-    cursor: pointer;
-}
-#main {
-    transition: margin-right .5s;
-    padding: 16px;
-}
 
 .home {
     text-decoration: none;
     font-family: montserrat,sans-serif;
-    font-weight: 800;
+    font-weight: 400;
     font-style: normal;
     color: black;
-    font-size: 10rem;
-    margin-left: 6rem;
-    position: absolute;
-    margin-top: 10rem;
+    font-size: 2rem;
     cursor: pointer;
+    margin-left: auto;
+    margin-right: 2rem;
+    margin-top: 1.5rem;
 }
 .home:hover {
     opacity: 70%;
     font-family: montserrat,sans-serif;
-    font-weight: 800;
+    font-weight: 400;
     font-style: italic;
-    font-size: 10rem;
+    font-size: 2rem;
     cursor: pointer;
 }
 .furn {
     text-decoration: none;
     font-family: montserrat,sans-serif;
-    font-weight: 800;
+    font-weight: 400;
     font-style: normal;
     color: black;
-    font-size: 10rem;
-    margin-left: 6rem;
-    position: absolute;
-    margin-top: 30rem;
+    font-size: 2rem;
     cursor: pointer;
+    margin-right: 2rem;
+    margin-top: 1.5rem;
 }
 .furn:hover {
     opacity: 70%;
     font-family: montserrat,sans-serif;
-    font-weight: 800;
+    font-weight: 400;
     font-style: italic;
-    font-size: 10rem;
+    font-size: 2rem;
     cursor: pointer;
 }
 .kit {
     text-decoration: none;
     font-family: montserrat,sans-serif;
-    font-weight: 800;
+    font-weight: 400;
     font-style: normal;
     color: black;
-    font-size: 10rem;
-    margin-left: 6rem;
-    position: absolute;
-    margin-top: 45rem;
+    font-size: 2rem;
     cursor: pointer;
+    margin-right: 2rem;
+    margin-top: 1.5rem;
 }
 .kit:hover {
     opacity: 70%; 
     font-family: montserrat,sans-serif;
-    font-weight: 800;
+    font-weight: 400;
     font-style: italic;
-    font-size: 10rem;
+    font-size: 2rem;
     cursor: pointer;
 }
 .misc {
     text-decoration: none;
     font-family: montserrat,sans-serif;
-    font-weight: 800;
+    font-weight: 400;
     font-style: normal;
     color: black;
-    font-size: 10rem;
-    margin-left: 6rem;
-    position: absolute;
-    margin-top: 60rem;
+    font-size: 2rem;
     cursor: pointer;
+    margin-right: 4rem;
+    margin-top: 1.5rem;
 }
 .misc:hover {
     opacity: 70%;
     font-family: montserrat,sans-serif;
-    font-weight: 800;
+    font-weight: 400;
     font-style: italic;
-    font-size: 10rem;
+    font-size: 2rem;
     cursor: pointer;
 }
-.decor {
-    width: 10rem;
-    height: 10rem;
-    margin-top: 77rem;
-    margin-left: 25rem;
-}
-.image {
-    width: 5rem;
-    height: 9rem;
+
+.cover {
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+    padding: 0;
+    height: 100%;
+    width: auto;
+    flex-wrap: wrap;
 }
 
-
-
-#slideshow-cover {
-    background-color: black;
-    margin-top: -5rem;
-    width:33.3%;
-}
-#slideshow-cover2 {
-    background-color: black;
-    margin-top: -5rem;
-    width:33.3%;
-}
-#slideshow-cover3 {
-    background-color: black;
-    margin-top: -5rem;
-    width:33.3%;
-}
 
 .slide {
-    
-    width: 50rem;
-    height: 55rem;
+    margin-top: 13rem;
 }
 .jpg {
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
-    margin-left: 10rem;
+    border: 2px solid black;
 }
 
 [data-component="slideshow"] .slide {
@@ -312,16 +226,15 @@ p {
     color: black;
     font-family: montserrat,sans-serif;
     font-weight: 800;
-    font-size: 10rem;
-    text-align: center;
-    margin-bottom: 2rem;
-    margin-left: 2rem;
+    font-size: 8rem;
+    margin-left: -15rem;
 }
 .caption span {
     opacity: 0;
     overflow: hidden;
     position: absolute;
     animation: topToBottom 5s infinite;
+    width: 100%;
 }
 .caption span:nth-child(2) {
     animation-delay: 1s;
@@ -345,35 +258,22 @@ p {
     20.01%, 100% {opacity: 0} 
   }
 
-.sub-caption {
-    color: black;
+.view {
+    align-self: flex-end;
+    flex-direction: column;
     font-family: montserrat,sans-serif;
     font-weight: 800;
-    font-size: 6.5rem;
-    text-align: center;
-    margin-top: 2rem;
-    margin-left: 35rem;
-}
-.sub-caption span {
-    opacity: 0;
-    overflow: hidden;
-    position: absolute;
-    animation: topToBottom 5s infinite;
-}
-.sub-caption span:nth-child(2) {
-    animation-delay: 1s;
-}
-.sub-caption span:nth-child(3) {
-    animation-delay: 2s;
-}
-.sub-caption span:nth-child(4){
-    -ms-animation-delay: 3s;
-    -webkit-animation-delay: 3s;
-    animation-delay: 3s;
+    color: black;
+    font-size: 7rem;
+    justify-content: center;
+    padding-left: 50rem;
+    padding-right: 50rem;
+    padding-top: 10rem;
   }
-  
-.sub-caption span:nth-child(5){
-    -ms-animation-delay: 4s;
-    -webkit-animation-delay: 4s;
-    animation-delay: 4s;
+  .view:hover {
+    font-family: montserrat,sans-serif;
+    font-weight: 800;
+    font-style: italic;
+    opacity: 70%;
+    cursor: pointer;
   }
