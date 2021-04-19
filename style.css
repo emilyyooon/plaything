@@ -224,9 +224,9 @@ p {
 }
 .caption {
     color: black;
-    font-family: montserrat,sans-serif;
+    font-family: futura-pt-condensed,sans-serif;
     font-weight: 800;
-    font-size: 8rem;
+    font-size: 11rem;
     margin-left: -15rem;
 }
 .caption span {
@@ -262,7 +262,7 @@ p {
     align-self: flex-end;
     flex-direction: column;
     font-family: montserrat,sans-serif;
-    font-weight: 800;
+    font-weight: 400;
     color: black;
     font-size: 7rem;
     justify-content: center;
@@ -272,7 +272,7 @@ p {
   }
   .view:hover {
     font-family: montserrat,sans-serif;
-    font-weight: 800;
+    font-weight: 400;
     font-style: italic;
     opacity: 70%;
     cursor: pointer;
